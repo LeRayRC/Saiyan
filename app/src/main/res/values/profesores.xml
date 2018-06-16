@@ -1,0 +1,12 @@
+<resources>
+    <profesores>
+        <prf_001>
+            <alias>paco</alias>
+            <alias>francisco</alias>
+            <alias>zaldivar</alias>
+            <imagen>telematica.jpg</imagen>
+            <imagen>lenguajes_programacion.png</imagen>
+            <imagen>patata.jpg</imagen>
+        </prf_001>
+    </profesores>
+</resources>
