@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Saiyan</string>
-    <string name="tituloJuego">ProfeDex</string>
+    <string name="titulo_juego">ProfeDex</string>
+    <string name="pista_nombre">Introduce tu nombre</string>
 </resources>
