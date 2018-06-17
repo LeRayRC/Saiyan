@@ -2,6 +2,8 @@
     <string name="app_name">Saiyan</string>
     <string name="titulo_juego">ProfeDex</string>
     <string name="pista_nombre">Introduce tu nombre</string>
+    <string name="pista_pregunta">¿Qué profesor es? </string>
+
     <string-array name="profesor_001">
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
