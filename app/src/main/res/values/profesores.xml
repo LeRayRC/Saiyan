@@ -8,5 +8,12 @@
             <imagen>lenguajes_programacion.png</imagen>
             <imagen>patata.jpg</imagen>
         </prf_001>
+        <prf_002>
+            <alias>josé sánchez</alias>
+            <alias>josé sánchez dehesa</alias>
+            <alias>josé sánchez-dehesa</alias>
+            <imagen>sonido_e_imagen.jpg</imagen>
+            <imagen>papa_noel.jpg</imagen>
+        </prf_002>
     </profesores>
 </resources>
