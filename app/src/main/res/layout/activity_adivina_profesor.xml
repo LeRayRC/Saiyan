@@ -7,4 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".adivinaProfesor">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="71dp"
+        android:layout_height="50dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="422dp" />
+
 </android.support.constraint.ConstraintLayout>
