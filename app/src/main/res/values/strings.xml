@@ -2,30 +2,20 @@
     <string name="app_name">Saiyan</string>
     <string name="titulo_juego">ProfeDex</string>
     <string name="pista_nombre">Introduce tu nombre</string>
-    <string-array name="profesores">
-        <item name='nombre' value='paco'/>
-        <item name='nombre' value='francisco'/>
-        <item name='nombre' value='zaldivar'/>
-        <item name='imagen' value='telematica.jpg'/>
-        <item name='imagen' value='lenguajes_programacion.png'/>
-        <item name='imagen' value='patata.jpg'/>
+    <string-array name="profesor_001">
+        <item value='nombre'>paco</item>
+        <item value='nombre'>francisco</item>
+        <item value='nombre'>zaldivar</item>
+        <item value='imagen'>telematica.jpg</item>
+        <item value='imagen'>lenguajes_programacion.png</item>
+        <item value='imagen'>patata.jpg</item>
     </string-array>
-    <!--<string name="profesores">
-        <string name="profesor" value="001">
-            <string name='nombre' value='paco'></string>
-            <string name='nombre' value='francisco'></string>
-            <string name='nombre' value='zaldivar'></string>
-            <string name='imagen_01' value='telematica.jpg'></string>
-            <string name='imagen_02' value='lenguajes_programacion.png'></string>
-            <string name='imagen_03' value='patata.jpg'></string>
-        </string>
-        <string name="profesor" value="002">
-            <string name='nombre' value='jose sanchez'></string>
-            <string name='nombre' value='jose sanchez dehesa'></string>
-            <string name='nombre' value='jose sanchez-dehesa'></string>
-            <string name='imagen_01' value='sonido_e_imagen.jpg'></string>
-            <string name='imagen_02' value='papa_noel.png'></string>
-            <string name='imagen_03' value='patata.jpg'></string>
-        </string>
-    </string>-->
+    <string-array name="profesor_002">
+        <item value='nombre'>jose sanchez dehesa</item>
+        <item value='nombre'>jose sanchez-dehesa</item>
+        <item value='nombre'>zaldivar</item>
+        <item value='imagen'>sonido_e_imagen.jpg</item>
+        <item value='imagen'>papa_noel.jpg</item>
+        <item value='imagen'>patata.jpg</item>
+    </string-array>
 </resources>
