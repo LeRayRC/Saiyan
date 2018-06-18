@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_1"
             android:visibility="visible"
             app:srcCompat="@drawable/bicicleta" />
 
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_2"
             android:visibility="visible"
             app:srcCompat="@drawable/electronica" />
     </TableRow>
@@ -52,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_3"
             android:visibility="visible"
             app:srcCompat="@drawable/perezoso" />
 
@@ -61,6 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_4"
             android:visibility="visible"
             app:srcCompat="@drawable/cocacola" />
     </TableRow>
@@ -78,7 +82,7 @@
             android:id="@+id/textView_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Adivinas quien es?"
+            android:text="@string/adivinas_quien_es"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -97,7 +101,7 @@
             android:id="@+id/button_1"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:text="¡Comprobar!"
+            android:text="@string/button_comprobar"
             android:visibility="visible" />
 
     </TableRow>
