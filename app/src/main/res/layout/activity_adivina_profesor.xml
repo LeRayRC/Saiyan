@@ -1,52 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible"
     tools:context=".adivinaProfesor">
 
-    <EditText
-        android:id="@+id/respuesta"
+    <TableRow
+        android:id="@+id/images_1_and_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/bicicleta" />
+
+        <ImageView
+            android:id="@+id/imageView_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_2"
+            android:visibility="visible"
+            app:srcCompat="@drawable/electronica" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/images_3_and_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_3"
+            android:visibility="visible"
+            app:srcCompat="@drawable/perezoso" />
+
+        <ImageView
+            android:id="@+id/imageView_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_description_image_4"
+            android:visibility="visible"
+            app:srcCompat="@drawable/cocacola" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/answer"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/pista_pregunta"
-        app:layout_constraintBottom_toTopOf="@+id/boton_respuesta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
 
-    <Button
-        android:id="@+id/boton_respuesta"
-        android:layout_width="93dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Solución"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/textView_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adivinas_quien_es"
+            android:textAlignment="center"
+            android:textSize="30sp" />
 
-    <ImageView
-        android:id="@+id/imagen_profesor"
-        android:layout_width="261dp"
-        android:layout_height="241dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintBottom_toTopOf="@+id/respuesta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/btn_dialog" />
+    </TableRow>
 
-</android.support.constraint.ConstraintLayout>
+    <TableRow
+        android:id="@+id/button_answer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/button_comprobar"
+            android:visibility="visible" />
+
+    </TableRow>
+
+</LinearLayout>
