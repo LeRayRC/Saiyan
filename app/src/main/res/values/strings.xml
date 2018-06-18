@@ -4,6 +4,14 @@
     <string name="pista_nombre">Introduce tu nombre</string>
     <string name="pista_pregunta">¿Qué profesor es? </string>
 
+    // activity_adivina_profesor
+    <string name="adivinas_quien_es">¿Adivinas quién es?</string>
+    <string name="content_description_image_1">imagen 1</string>
+    <string name="content_description_image_2">imagen 2</string>
+    <string name="content_description_image_3">imagen 3</string>
+    <string name="content_description_image_4">imagen 4</string>
+    <string name="button_comprobar">¡COMPROBAR!</string>
+
     <string-array name="profesor_001">
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
