@@ -8,7 +8,7 @@
     tools:context=".adivinaProfesor">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/respuesta"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_marginBottom="44dp"
@@ -17,12 +17,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/pista_pregunta"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/boton_respuesta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/boton_respuesta"
         android:layout_width="93dp"
         android:layout_height="50dp"
         android:layout_marginBottom="32dp"
@@ -41,7 +41,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="76dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/respuesta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
