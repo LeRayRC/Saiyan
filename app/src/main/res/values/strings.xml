@@ -3,4 +3,21 @@
     <string name="titulo_juego">ProfeDex</string>
     <string name="pista_nombre">Introduce tu nombre</string>
     <string name="pista_pregunta">¿Qué profesor es? </string>
+
+    <string-array name="profesor_001">
+        <item value='nombre'>paco</item>
+        <item value='nombre'>francisco</item>
+        <item value='nombre'>zaldivar</item>
+        <item value='imagen'>telematica.jpg</item>
+        <item value='imagen'>lenguajes_programacion.png</item>
+        <item value='imagen'>patata.jpg</item>
+    </string-array>
+    <string-array name="profesor_002">
+        <item value='nombre'>jose sanchez dehesa</item>
+        <item value='nombre'>jose sanchez-dehesa</item>
+        <item value='nombre'>zaldivar</item>
+        <item value='imagen'>sonido_e_imagen.jpg</item>
+        <item value='imagen'>papa_noel.jpg</item>
+        <item value='imagen'>patata.jpg</item>
+    </string-array>
 </resources>
