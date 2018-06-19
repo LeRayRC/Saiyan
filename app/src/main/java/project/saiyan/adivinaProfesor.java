@@ -28,7 +28,7 @@ public class adivinaProfesor extends AppCompatActivity {
         final int selector = orden[contador];
 
         /* Accedemos al XML. */
-        final String profesor_nombres = "profesor_0" + (selector>=10?""+selector:"0"+selector);
+        final String profesor_nombres = "profesor_0" + (selector>=10?selector:"0"+selector);
         final String profesor_imagenes = "profesor_0" + (selector>=10?selector:"0"+selector) + "_imagenes";
         final int res_id_nombre = getResources().getIdentifier(profesor_nombres,"array",getPackageName());
         final String[] nombres_profesor = getResources().getStringArray(res_id_nombre);

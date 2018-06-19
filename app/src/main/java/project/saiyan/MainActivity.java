@@ -17,21 +17,18 @@ public class MainActivity extends AppCompatActivity {
      *  \author Adrian Rosello <creitor96@gmail.com>
      **/
     private int get_numero_total_profesores() {
-        int total = 0;
+        int idx;
         String profesor_nombres;
 
-        for (int idx_0 = 0; idx_0 < 10; idx_0++) {
-            for (int idx_1 = 0; idx_1 < 10; idx_1++) {
-                profesor_nombres = "profesor_0" + idx_1 + idx_0;
-                final int res_id_nombre = getResources().getIdentifier(profesor_nombres, "array", getPackageName());
-                if (res_id_nombre == 0) {
-                    return total;
-                }
-                System.out.println(total);
-                total++;
+        for (idx = 1; idx < 100; idx++) {
+            profesor_nombres = "profesor_0" + (idx >= 10 ? idx : "0" + idx);
+            int res_id_nombre = getResources().getIdentifier(profesor_nombres, "array", getPackageName());
+            if (res_id_nombre == 0) {
+                System.out.println("------------ " + idx);
+                return idx - 1;
             }
         }
-        return total;
+        return idx - 1;
     }
 
     /*Genera un array con un orden aleatorio de numeros*/

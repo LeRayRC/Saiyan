@@ -16,11 +16,6 @@
     <string name="button_pista">PISTA </string>
 
     /* Array de strings para registrar profesores y pistas*/
-    <string-array name="profesor_000">
-    </string-array>
-    <string-array name="profesor_00_imagenes">
-    </string-array>
-
     <string-array name="profesor_001">
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
