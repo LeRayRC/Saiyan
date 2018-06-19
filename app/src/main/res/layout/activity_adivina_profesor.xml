@@ -82,7 +82,7 @@
             android:id="@+id/respuesta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/adivinas_quien_es"
+            android:hint="@string/adivinas_quien_es"
             android:textAlignment="center"
             android:textSize="30sp" />
 
