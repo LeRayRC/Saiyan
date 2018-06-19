@@ -77,5 +77,16 @@ public class adivinaProfesor extends AppCompatActivity {
                 }
             }
         });
+        /* Implementacion del boton pista. Al pulsarlo se muestran las imagenes de abajo y desaparece el boton */
+        final Button pista = findViewById(R.id.boton_pista);
+        pista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                imagen_3.setVisibility(View.VISIBLE);
+                imagen_4.setVisibility(View.VISIBLE);
+                pista.setVisibility(View.GONE);
+            }
+        });
     }
 }
