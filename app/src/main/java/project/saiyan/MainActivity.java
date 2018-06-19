@@ -51,11 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 b.putInt("Contador",contador);
 
                 intento.putExtras(b);
-                /*
-                intento.putExtra("Nombre",nombre_jugador);
-                intento.putExtra("Orden",orden);
-                intento.putExtra("Contador",contador);
-                */
+
                 startActivity(intento);
             }
         });
