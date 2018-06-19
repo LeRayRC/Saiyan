@@ -27,6 +27,7 @@ public class Fin extends AppCompatActivity {
                 Intent intento = new Intent(Fin.this, MainActivity.class);
 
                 startActivity(intento);
+                finish();
             }
         });
     }
