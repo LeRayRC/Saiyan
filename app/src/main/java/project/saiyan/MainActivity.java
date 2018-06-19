@@ -47,10 +47,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intento = new Intent(MainActivity.this, adivinaProfesor.class);
                 String nombre_jugador = introducir_nombre.getText().toString();
 
+                Bundle b = new Bundle();
+                b.putString("Nombre",nombre_jugador);
+                b.putIntArray("Orden",orden);
+                b.putInt("Contador",contador);
+
+                intento.putExtras(b);
+                /*
                 intento.putExtra("Nombre",nombre_jugador);
                 intento.putExtra("Orden",orden);
                 intento.putExtra("Contador",contador);
-
+                */
                 startActivity(intento);
             }
         });

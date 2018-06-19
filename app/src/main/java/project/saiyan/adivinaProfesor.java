@@ -11,17 +11,17 @@ import android.widget.Toast;
 
 
 public class adivinaProfesor extends AppCompatActivity {
-    /*Obtenemos los datos de la actividad anterior*/
 
-    Intent intento = getIntent();
-    String nombre_jugador = intento.getStringExtra("Nombre");
-    int contador = intento.getIntExtra("Contador",0);
-    int[] orden = intento.getIntArrayExtra("Orden");
-
+    public static int contador;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adivina_profesor);
+
+        Intent intento = getIntent();
+        final String nombre_jugador = intento.getStringExtra("Nombre");
+        final int[] orden = intento.getIntArrayExtra("Orden");
+        contador = intento.getIntExtra("Contador",0);
 
         /* Generamos un int random entre 1 y 2. De momento solo hay dos profesroes */
 
