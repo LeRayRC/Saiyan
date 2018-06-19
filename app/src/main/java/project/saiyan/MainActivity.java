@@ -10,10 +10,30 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     *  \brief Devuelve el numero de profesores encontrados
+     *  en strings.xml
+     *  \return Numero total de profesores
+     *  \author Adrian Rosello <creitor96@gmail.com>
+     **/
+    public int get_numero_total_profesores() {
+        int idx;
+        String profesor_nombres;
+
+        for (idx = 1; idx < 100; idx++) {
+            profesor_nombres = "profesor_0" + (idx >= 10 ? idx : "0" + idx);
+            int res_id_nombre = getResources().getIdentifier(profesor_nombres, "array", getPackageName());
+            if (res_id_nombre == 0) {
+                return idx - 1;
+            }
+        }
+        return idx - 1;
+    }
+
     /*Genera un array con un orden aleatorio de numeros*/
     public int[] generar(){
         List<Integer> lista = new ArrayList<Integer>();
-        int[] orden = new int [2];
+        int[] orden = new int [get_numero_total_profesores()];
 
         for (int i=0;i<orden.length;i++){
             lista.add(i+1);
@@ -35,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         final int[] orden = generar();
         final int contador = 0;
 
-        final EditText introducir_nombre = (EditText)findViewById(R.id.nombre_jugador);
-        Button boton_jugar = (Button)findViewById(R.id.iniciar_juego);
+        final EditText introducir_nombre = findViewById(R.id.nombre_jugador);
+        Button boton_jugar = findViewById(R.id.iniciar_juego);
 
         boton_jugar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 b.putString("Nombre",nombre_jugador);
                 b.putIntArray("Orden",orden);
                 b.putInt("Contador",contador);
+                b.putInt("NumTotalProfesores",get_numero_total_profesores());
 
                 intento.putExtras(b);
 
