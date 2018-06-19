@@ -28,8 +28,8 @@ public class adivinaProfesor extends AppCompatActivity {
         final int selector = orden[contador];
 
         /* Accedemos al XML. */
-        final String profesor_nombres = "profesor_00" + selector;
-        final String profesor_imagenes = "profesor_00" + selector + "_imagenes";
+        final String profesor_nombres = "profesor_0" + (selector>=10?""+selector:"0"+selector);
+        final String profesor_imagenes = "profesor_0" + (selector>=10?selector:"0"+selector) + "_imagenes";
         final int res_id_nombre = getResources().getIdentifier(profesor_nombres,"array",getPackageName());
         final String[] nombres_profesor = getResources().getStringArray(res_id_nombre);
         final int res_id_imagenes = getResources().getIdentifier(profesor_imagenes,"array",getPackageName());
@@ -80,7 +80,7 @@ public class adivinaProfesor extends AppCompatActivity {
 
                 if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
                     contador++;
-
+                    /* Sustituir este 2 por la funcion que averigua cuantos profesores hay*/
                     if(contador==2){
                         intento3.putExtra("Nombre", nombre_jugador);
                         startActivity(intento3);
