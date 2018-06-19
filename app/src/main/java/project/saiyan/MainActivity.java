@@ -6,25 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
     /*Genera un array con un orden aleatorio de numeros*/
-    public int[] generar() {
-        int[] orden = new int[2];
-        boolean existe = false;
-        int selector = 1 + (int) (Math.random() * 2);
+    public int[] generar(){
+        List<Integer> lista = new ArrayList<Integer>();
+        int[] orden = new int [2];
 
-        for (int i = 0; i < orden.length; i++) {
-            if (orden[i] == selector) {
-                existe = true;
-            }
+        for (int i=0;i<orden.length;i++){
+            lista.add(i+1);
         }
 
-        for (int i = 0; i < orden.length; i++) {
-            if (orden[i] == 0) {
-                orden[i] = selector;
-            }
+        Collections.shuffle(lista);
+
+        for(int i=0;i<lista.size();i++){
+            orden[i] = lista.get(i);
         }
         return orden;
     }
