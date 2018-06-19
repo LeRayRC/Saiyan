@@ -39,7 +39,7 @@ public class adivinaProfesor extends AppCompatActivity {
 
         final Toast respuesta_incorrecta = Toast.makeText(getApplicationContext(), "Respuesta incorrecta", Toast.LENGTH_SHORT);
 
-        for(int i = 0;i<4;i++) {
+        for(int i = 0;i<imagenes_profesor.length;i++) {
             final int res_id = getResources().getIdentifier(imagenes_profesor[i], "drawable", getPackageName());
             switch (i) {
                 case 0: {
