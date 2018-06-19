@@ -75,13 +75,14 @@ public class adivinaProfesor extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intento2 = new Intent(adivinaProfesor.this, adivinaProfesor.class);
-                Intent intento3 = new Intent(adivinaProfesor.this, MainActivity.class);
+                Intent intento3 = new Intent(adivinaProfesor.this, Fin.class);
                 String respuesta = introducir_respuesta.getText().toString().toLowerCase();
 
                 if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
                     contador++;
                     /* Sustituir este 2 por la funcion que averigua cuantos profesores hay*/
                     if(contador==2){
+                        intento3.putExtra("Nombre", nombre_jugador);
                         startActivity(intento3);
                     }else {
                         intento2.putExtra("Nombre", nombre_jugador);
