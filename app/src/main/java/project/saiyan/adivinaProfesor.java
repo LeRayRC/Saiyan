@@ -75,15 +75,20 @@ public class adivinaProfesor extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intento2 = new Intent(adivinaProfesor.this, adivinaProfesor.class);
+                Intent intento3 = new Intent(adivinaProfesor.this, MainActivity.class);
                 String respuesta = introducir_respuesta.getText().toString().toLowerCase();
 
-                contador++;
-                intento2.putExtra("Nombre",nombre_jugador);
-                intento2.putExtra("Orden",orden);
-                intento2.putExtra("Contador", contador);
-
                 if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
-                    startActivity(intento2);
+                    contador++;
+
+                    if(contador==2){
+                        startActivity(intento3);
+                    }else {
+                        intento2.putExtra("Nombre", nombre_jugador);
+                        intento2.putExtra("Orden", orden);
+                        intento2.putExtra("Contador", contador);
+                        startActivity(intento2);
+                    }
                 }else{
                     respuesta_incorrecta.show();
                 }
