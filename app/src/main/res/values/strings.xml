@@ -16,16 +16,26 @@
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
         <item value='nombre'>zaldivar</item>
-        <item value='imagen'>telematica.jpg</item>
-        <item value='imagen'>lenguajes_programacion.png</item>
-        <item value='imagen'>patata.jpg</item>
     </string-array>
+
+    <string-array name="profesor_001_imagenes">
+        <item value='imagen'>telematica</item>
+        <item value='imagen'>lenguajes_programacion</item>
+        <item value='imagen'>patata</item>
+        <item value='imagen'>sistemas</item>
+    </string-array>
+
     <string-array name="profesor_002">
         <item value='nombre'>jose sanchez dehesa</item>
         <item value='nombre'>jose sanchez-dehesa</item>
         <item value='nombre'>zaldivar</item>
-        <item value='imagen'>sonido_e_imagen.jpg</item>
-        <item value='imagen'>papa_noel.jpg</item>
-        <item value='imagen'>patata.jpg</item>
     </string-array>
+
+    <string-array name="profesor_002_imagenes">
+        <item value='imagen'>sonido_e_imagen</item>
+        <item value='imagen'>papa_noel</item>
+        <item value='imagen'>patata</item>
+        <item value='imagen'>sistemas</item>
+    </string-array>
+
 </resources>
