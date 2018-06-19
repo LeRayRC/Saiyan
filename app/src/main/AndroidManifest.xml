@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".adivinaProfesor"></activity>
+        <activity android:name=".adivinaProfesor" />
+        <activity android:name=".Fin"></activity>
     </application>
 
 </manifest>
