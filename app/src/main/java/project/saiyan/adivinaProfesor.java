@@ -12,13 +12,20 @@ import android.widget.Toast;
 
 public class adivinaProfesor extends AppCompatActivity {
 
+    public static int contador;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adivina_profesor);
 
+        Intent intento = getIntent();
+        final String nombre_jugador = intento.getStringExtra("Nombre");
+        final int[] orden = intento.getIntArrayExtra("Orden");
+        contador = intento.getIntExtra("Contador",0);
+
         /* Generamos un int random entre 1 y 2. De momento solo hay dos profesroes */
-        final int selector = 1 + (int)(Math.random()*2);
+
+        final int selector = orden[contador];
 
         /* Accedemos al XML. */
         final String profesor_nombres = "profesor_00" + selector;
@@ -68,13 +75,26 @@ public class adivinaProfesor extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intento2 = new Intent(adivinaProfesor.this, adivinaProfesor.class);
+                Intent intento3 = new Intent(adivinaProfesor.this, Fin.class);
                 String respuesta = introducir_respuesta.getText().toString().toLowerCase();
 
                 if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
-                    startActivity(intento2);
+                    contador++;
+
+                    if(contador==2){
+                        intento3.putExtra("Nombre", nombre_jugador);
+                        startActivity(intento3);
+                    }else {
+                        intento2.putExtra("Nombre", nombre_jugador);
+                        intento2.putExtra("Orden", orden);
+                        intento2.putExtra("Contador", contador);
+                        startActivity(intento2);
+                    }
                 }else{
                     respuesta_incorrecta.show();
                 }
+
+
             }
         });
         /* Implementacion del boton pista. Al pulsarlo se muestran las imagenes de abajo y desaparece el boton */
