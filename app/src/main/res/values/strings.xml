@@ -1,4 +1,5 @@
 <resources>
+    // activity_main
     <string name="app_name">Saiyan</string>
     <string name="titulo_juego">ProfeDex</string>
     <string name="pista_nombre">Introduce tu nombre</string>
@@ -14,12 +15,17 @@
     <string name="button_comprobar">¡COMPROBAR!</string>
     <string name="button_pista">PISTA </string>
 
+    /* Array de strings para registrar profesores y pistas*/
+    <string-array name="profesor_000">
+    </string-array>
+    <string-array name="profesor_00_imagenes">
+    </string-array>
+
     <string-array name="profesor_001">
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
         <item value='nombre'>zaldivar</item>
     </string-array>
-
     <string-array name="profesor_001_imagenes">
         <item value='imagen'>telematica</item>
         <item value='imagen'>lenguajes_programacion</item>
@@ -32,7 +38,6 @@
         <item value='nombre'>jose sanchez-dehesa</item>
         <item value='nombre'>zaldivar</item>
     </string-array>
-
     <string-array name="profesor_002_imagenes">
         <item value='imagen'>sonido_e_imagen</item>
         <item value='imagen'>papa_noel</item>
