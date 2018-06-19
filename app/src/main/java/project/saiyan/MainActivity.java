@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
             profesor_nombres = "profesor_0" + (idx >= 10 ? idx : "0" + idx);
             int res_id_nombre = getResources().getIdentifier(profesor_nombres, "array", getPackageName());
             if (res_id_nombre == 0) {
-                System.out.println("------------ " + idx);
                 return idx - 1;
             }
         }
