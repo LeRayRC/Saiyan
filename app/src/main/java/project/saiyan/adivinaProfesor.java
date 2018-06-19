@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
+
+
 public class adivinaProfesor extends AppCompatActivity {
 
     public static int contador;
@@ -22,6 +24,8 @@ public class adivinaProfesor extends AppCompatActivity {
         final String nombre_jugador = intento.getStringExtra("Nombre");
         final int[] orden = intento.getIntArrayExtra("Orden");
         contador = intento.getIntExtra("Contador",0);
+        final int NumTotalProfesores = intento.getIntExtra("NumTotalProfesores",0);
+
 
         /* Generamos un int random entre 1 y 2. De momento solo hay dos profesroes */
 
@@ -81,7 +85,7 @@ public class adivinaProfesor extends AppCompatActivity {
                 if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
                     contador++;
                     /* Sustituir este 2 por la funcion que averigua cuantos profesores hay*/
-                    if(contador==2){
+                    if(contador == NumTotalProfesores){
                         intento3.putExtra("Nombre", nombre_jugador);
                         startActivity(intento3);
                         finish();
@@ -89,6 +93,7 @@ public class adivinaProfesor extends AppCompatActivity {
                         intento2.putExtra("Nombre", nombre_jugador);
                         intento2.putExtra("Orden", orden);
                         intento2.putExtra("Contador", contador);
+                        intento2.putExtra("NumTotalProfesores", NumTotalProfesores);
                         startActivity(intento2);
                         finish();
                     }

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
      *  \return Numero total de profesores
      *  \author Adrian Rosello <creitor96@gmail.com>
      **/
-    private int get_numero_total_profesores() {
+    public int get_numero_total_profesores() {
         int idx;
         String profesor_nombres;
 
@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         final int[] orden = generar();
         final int contador = 0;
 
-        final EditText introducir_nombre = (EditText)findViewById(R.id.nombre_jugador);
-        Button boton_jugar = (Button)findViewById(R.id.iniciar_juego);
+        final EditText introducir_nombre = findViewById(R.id.nombre_jugador);
+        Button boton_jugar = findViewById(R.id.iniciar_juego);
 
         boton_jugar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 b.putString("Nombre",nombre_jugador);
                 b.putIntArray("Orden",orden);
                 b.putInt("Contador",contador);
+                b.putInt("NumTotalProfesores",get_numero_total_profesores());
 
                 intento.putExtras(b);
 
