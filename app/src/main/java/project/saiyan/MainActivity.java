@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 intento.putExtra("Contador",contador);
                 */
                 startActivity(intento);
+
             }
         });
     }

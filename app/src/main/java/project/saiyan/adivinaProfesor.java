@@ -84,11 +84,13 @@ public class adivinaProfesor extends AppCompatActivity {
                     if(contador==2){
                         intento3.putExtra("Nombre", nombre_jugador);
                         startActivity(intento3);
+                        finish();
                     }else {
                         intento2.putExtra("Nombre", nombre_jugador);
                         intento2.putExtra("Orden", orden);
                         intento2.putExtra("Contador", contador);
                         startActivity(intento2);
+                        finish();
                     }
                 }else{
                     respuesta_incorrecta.show();
