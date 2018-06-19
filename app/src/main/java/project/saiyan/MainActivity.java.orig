@@ -34,12 +34,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*Genera un array con un orden aleatorio de numeros*/
+<<<<<<< HEAD
+    public int[] generar() {
+        int[] orden = new int[get_numero_total_profesores()];
+        boolean existe = false;
+        int selector = 1 + (int) (Math.random() * 2);
+
+        for (int i = 0; i < orden.length; i++) {
+            if (orden[i] == selector) {
+                existe = true;
+            }
+=======
     public int[] generar(){
         List<Integer> lista = new ArrayList<Integer>();
-        int[] orden = new int [get_numero_total_profesores()];
+        int[] orden = new int [2];
 
         for (int i=0;i<orden.length;i++){
             lista.add(i+1);
+>>>>>>> master
         }
 
         Collections.shuffle(lista);
