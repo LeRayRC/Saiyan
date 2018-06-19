@@ -9,9 +9,32 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     *  \brief Devuelve el numero de profesores encontrados
+     *  en strings.xml
+     *  \return Numero total de profesores
+     *  \author Adrian Rosello <creitor96@gmail.com>
+     **/
+    private int get_numero_total_profesores() {
+        int total = 0;
+        String profesor_nombres;
+
+        for (int idx_0 = 0; idx_0 < 10; idx_0++) {
+            for (int idx_1 = 0; idx_1 < 10; idx_1++) {
+                profesor_nombres = "profesor_0" + idx_1 + idx_0;
+                final int res_id_nombre = getResources().getIdentifier(profesor_nombres, "array", getPackageName());
+                if (res_id_nombre == 0) {
+                    break;
+                }
+                total++;
+            }
+        }
+        return total;
+    }
+
     /*Genera un array con un orden aleatorio de numeros*/
     public int[] generar() {
-        int[] orden = new int[2];
+        int[] orden = new int[get_numero_total_profesores()];
         boolean existe = false;
         int selector = 1 + (int) (Math.random() * 2);
 
