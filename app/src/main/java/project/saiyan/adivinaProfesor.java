@@ -11,6 +11,12 @@ import android.widget.Toast;
 
 
 public class adivinaProfesor extends AppCompatActivity {
+    /*Obtenemos los datos de la actividad anterior*/
+
+    Intent intento = getIntent();
+    String nombre_jugador = intento.getStringExtra("Nombre");
+    int contador = intento.getIntExtra("Contador",0);
+    int[] orden = intento.getIntArrayExtra("Orden");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +24,8 @@ public class adivinaProfesor extends AppCompatActivity {
         setContentView(R.layout.activity_adivina_profesor);
 
         /* Generamos un int random entre 1 y 2. De momento solo hay dos profesroes */
-        final int selector = 1 + (int)(Math.random()*2);
+
+        final int selector = orden[contador];
 
         /* Accedemos al XML. */
         final String profesor_nombres = "profesor_00" + selector;
@@ -70,11 +77,18 @@ public class adivinaProfesor extends AppCompatActivity {
                 Intent intento2 = new Intent(adivinaProfesor.this, adivinaProfesor.class);
                 String respuesta = introducir_respuesta.getText().toString().toLowerCase();
 
+                contador++;
+                intento2.putExtra("Nombre",nombre_jugador);
+                intento2.putExtra("Orden",orden);
+                intento2.putExtra("Contador", contador);
+
                 if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
                     startActivity(intento2);
                 }else{
                     respuesta_incorrecta.show();
                 }
+
+
             }
         });
         /* Implementacion del boton pista. Al pulsarlo se muestran las imagenes de abajo y desaparece el boton */
