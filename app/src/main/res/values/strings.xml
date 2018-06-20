@@ -20,6 +20,17 @@
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
         <item value='nombre'>zaldivar</item>
+        <item value='nombre'>1</item>
+        <item value='nombre'>2</item>
+        <item value='nombre'>3</item>
+        <item value='nombre'>4</item>
+        <item value='nombre'>5</item>
+        <item value='nombre'>6</item>
+        <item value='nombre'>7</item>
+        <item value='nombre'>8</item>
+        <item value='nombre'>9</item>
+        <item value='nombre'>10</item>
+        <item value='nombre'>11</item>
     </string-array>
     <string-array name="profesor_001_imagenes">
         <item value='imagen'>telematica</item>
@@ -32,10 +43,44 @@
         <item value='nombre'>jose sanchez dehesa</item>
         <item value='nombre'>jose sanchez-dehesa</item>
         <item value='nombre'>zaldivar</item>
+        <item value='nombre'>1</item>
+        <item value='nombre'>2</item>
+        <item value='nombre'>3</item>
+        <item value='nombre'>4</item>
+        <item value='nombre'>5</item>
+        <item value='nombre'>6</item>
+        <item value='nombre'>7</item>
+        <item value='nombre'>8</item>
+        <item value='nombre'>9</item>
+        <item value='nombre'>10</item>
+        <item value='nombre'>11</item>
     </string-array>
     <string-array name="profesor_002_imagenes">
         <item value='imagen'>sonido_e_imagen</item>
         <item value='imagen'>papa_noel</item>
+        <item value='imagen'>patata</item>
+        <item value='imagen'>sistemas</item>
+    </string-array>
+
+    <string-array name="profesor_003">
+        <item value='nombre'>paco</item>
+        <item value='nombre'>francisco</item>
+        <item value='nombre'>zaldivar</item>
+        <item value='nombre'>1</item>
+        <item value='nombre'>2</item>
+        <item value='nombre'>3</item>
+        <item value='nombre'>4</item>
+        <item value='nombre'>5</item>
+        <item value='nombre'>6</item>
+        <item value='nombre'>7</item>
+        <item value='nombre'>8</item>
+        <item value='nombre'>9</item>
+        <item value='nombre'>10</item>
+        <item value='nombre'>11</item>
+    </string-array>
+    <string-array name="profesor_003_imagenes">
+        <item value='imagen'>telematica</item>
+        <item value='imagen'>perezoso</item>
         <item value='imagen'>patata</item>
         <item value='imagen'>sistemas</item>
     </string-array>
