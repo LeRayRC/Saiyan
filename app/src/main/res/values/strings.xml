@@ -20,69 +20,62 @@
         <item value='nombre'>paco</item>
         <item value='nombre'>francisco</item>
         <item value='nombre'>zaldivar</item>
-        <item value='nombre'>1</item>
-        <item value='nombre'>2</item>
-        <item value='nombre'>3</item>
-        <item value='nombre'>4</item>
-        <item value='nombre'>5</item>
-        <item value='nombre'>6</item>
-        <item value='nombre'>7</item>
-        <item value='nombre'>8</item>
-        <item value='nombre'>9</item>
-        <item value='nombre'>10</item>
-        <item value='nombre'>11</item>
+        <item value='nombre'>francisco jose martinez zaldívar</item>
+        <item value='nombre'>paco martinez</item>
+        <item value='nombre'>comodin</item>
     </string-array>
     <string-array name="profesor_001_imagenes">
         <item value='imagen'>telematica</item>
         <item value='imagen'>lenguajes_programacion</item>
-        <item value='imagen'>patata</item>
-        <item value='imagen'>sistemas</item>
+        <item value='imagen'>android</item>
+        <item value='imagen'>git</item>
     </string-array>
 
     <string-array name="profesor_002">
         <item value='nombre'>jose sanchez dehesa</item>
         <item value='nombre'>jose sanchez-dehesa</item>
-        <item value='nombre'>zaldivar</item>
-        <item value='nombre'>1</item>
-        <item value='nombre'>2</item>
-        <item value='nombre'>3</item>
-        <item value='nombre'>4</item>
-        <item value='nombre'>5</item>
-        <item value='nombre'>6</item>
-        <item value='nombre'>7</item>
-        <item value='nombre'>8</item>
-        <item value='nombre'>9</item>
-        <item value='nombre'>10</item>
-        <item value='nombre'>11</item>
+        <item value='nombre'>jose</item>
+        <item value='nombre'>sanchez-dehesa</item>
+        <item value='nombre'>sanchez dehesa</item>
+        <item value='nombre'>comodin</item>
     </string-array>
     <string-array name="profesor_002_imagenes">
         <item value='imagen'>sonido_e_imagen</item>
         <item value='imagen'>papa_noel</item>
-        <item value='imagen'>patata</item>
-        <item value='imagen'>sistemas</item>
+        <item value='imagen'>auriculares</item>
+        <item value='imagen'>camara</item>
     </string-array>
 
     <string-array name="profesor_003">
-        <item value='nombre'>paco</item>
-        <item value='nombre'>francisco</item>
-        <item value='nombre'>zaldivar</item>
-        <item value='nombre'>1</item>
-        <item value='nombre'>2</item>
-        <item value='nombre'>3</item>
-        <item value='nombre'>4</item>
-        <item value='nombre'>5</item>
-        <item value='nombre'>6</item>
-        <item value='nombre'>7</item>
-        <item value='nombre'>8</item>
-        <item value='nombre'>9</item>
-        <item value='nombre'>10</item>
-        <item value='nombre'>11</item>
+        <item value='nombre'>antonio</item>
+        <item value='nombre'>leon</item>
+        <item value='nombre'>toni</item>
+        <item value='nombre'>antonio leon</item>
+        <item value='nombre'>antonio leon fernandez</item>
+        <item value='nombre'>fernandez</item>
+        <item value='nombre'>comodin</item>
     </string-array>
     <string-array name="profesor_003_imagenes">
-        <item value='imagen'>telematica</item>
-        <item value='imagen'>perezoso</item>
-        <item value='imagen'>patata</item>
-        <item value='imagen'>sistemas</item>
+        <item value='imagen'>router</item>
+        <item value='imagen'>cisco</item>
+        <item value='imagen'>leon</item>
+        <item value='imagen'>atleti</item>
+    </string-array>
+
+    <string-array name="profesor_004">
+        <item value='nombre'>patiño</item>
+        <item value='nombre'>jose</item>
+        <item value='nombre'>jose enrique</item>
+        <item value='nombre'>lopez patiño</item>
+        <item value='nombre'>jose enrique lopez patiño</item>
+        <item value='nombre'>lopez</item>
+        <item value='nombre'>comodin</item>
+    </string-array>
+    <string-array name="profesor_004_imagenes">
+        <item value='imagen'>router</item>
+        <item value='imagen'>javajdbc</item>
+        <item value='imagen'>esquema</item>
+        <item value='imagen'>atleti</item>
     </string-array>
 
 </resources>
