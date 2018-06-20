@@ -28,9 +28,6 @@ public class adivinaProfesor extends AppCompatActivity {
         contador = intento.getIntExtra("Contador",0);
         final int NumTotalProfesores = intento.getIntExtra("NumTotalProfesores",0);
 
-
-        /* Generamos un int random entre 1 y 2. De momento solo hay dos profesroes */
-
         final int selector = orden[contador];
 
         /* Accedemos al XML. */
@@ -84,7 +81,14 @@ public class adivinaProfesor extends AppCompatActivity {
                 Intent intento3 = new Intent(adivinaProfesor.this, Fin.class);
                 String respuesta = introducir_respuesta.getText().toString().toLowerCase();
 
-                if(respuesta.equals(nombres_profesor[0])||respuesta.equals(nombres_profesor[1])||respuesta.equals(nombres_profesor[2])) {
+                boolean correcto = false;
+                for (int i=0;i<nombres_profesor.length;i++){
+                    if (respuesta.equals(nombres_profesor[i])){
+                        correcto = true;
+                    }
+                }
+
+                if(correcto){
                     contador++;
                     /* Sustituir este 2 por la funcion que averigua cuantos profesores hay*/
                     if(contador == NumTotalProfesores){
