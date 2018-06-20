@@ -90,7 +90,6 @@ public class adivinaProfesor extends AppCompatActivity {
 
                 if(correcto){
                     contador++;
-                    /* Sustituir este 2 por la funcion que averigua cuantos profesores hay*/
                     if(contador == NumTotalProfesores){
                         intento3.putExtra("Nombre", nombre_jugador);
                         startActivity(intento3);
